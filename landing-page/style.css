@@ -29,6 +29,8 @@ li {
 }
 .right {
     display: flex;
+    min-height: 150px;
+    min-width: 300px;
     justify-content: center;
     align-items: center;
     background-color: whitesmoke;
@@ -36,33 +38,57 @@ li {
 .right p {
     text-align: center;
 }
-.second {
-    display: block;
-    padding: 1em 0 3em 0;
-}
+
+
 h3 {
     text-align: center;
+    padding: 1em;
 }
 
 .boxes {
-    background-color: whitesmoke;
+    background-color: white;
+    flex-wrap: wrap;
+    gap: 2em;
     display: flex;
-    padding: 1em 8em 3em;
-    justify-content: space-between;
+    padding: 0em 8em 4em;
+    justify-content: center;
+    
 }
 .box {
     display: flex;
-    padding:0;
-    margin: 0 1em;
+    width: 100px;
+    flex-direction: column;
+    align-items: center
 }
-.square {
+.square {   
     box-sizing: border-box;
-    width: 100%;
-    height: auto;
-    border: 1px; 
+    width: 100px;
+    height: 100px;
     background-color: yellow;
 }
 .box p {
     text-align: center;
+    padding-top: 1em;
+}
+.quote{
+    display: flex;
+    flex-direction: column;
+    background-color: teal;
+    align-items: center;
+    padding: 4em 12em;
+}
+blockquote {
+    width: 500px;
+    font-style: italic;
+    font-size: x-large;
+}
+#author {
+    background-color: tomato;
+    width: 500px;
+    font-size: small;
+   font-weight: bold;
+   text-align: right;
+}
+.signup{
     
 }
